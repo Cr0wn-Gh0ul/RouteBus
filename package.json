@@ -1,6 +1,6 @@
 {
   "name": "routebus",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Type-safe event bus with pluggable transports",
   "type": "module",
   "main": "dist/index.js",
