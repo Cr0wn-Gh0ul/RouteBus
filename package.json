@@ -4,12 +4,11 @@
   "description": "Type-safe event bus with pluggable transports",
   "type": "module",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
+      "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     }
   },
@@ -17,6 +16,7 @@
     "build": "tsc",
     "build:tests": "tsc -p tsconfig.test.json",
     "build:examples": "tsc -p tsconfig.examples.json",
+    "prepublishOnly": "npm run build && npm test",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -24,6 +24,14 @@
     "docs:html": "npm run build && jsdoc -c jsdoc.json dist/index.js",
     "example": "npm run build && npm run build:examples && node dist-examples/examples/basic.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cr0wn-Gh0ul/RouteBus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Cr0wn-Gh0ul/RouteBus/issues"
+  },
+  "homepage": "https://github.com/Cr0wn-Gh0ul/RouteBus#readme",
   "keywords": [
     "event-bus",
     "event-emitter",
@@ -34,7 +42,7 @@
     "broadcast-channel",
     "microservices"
   ],
-  "author": "",
+  "author": "Cr0wn-Gh0ul",
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^30.0.0",

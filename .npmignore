@@ -1,0 +1,25 @@
+# Source files
+src/
+examples/
+tests/
+
+# Config files
+tsconfig.json
+tsconfig.test.json
+tsconfig.examples.json
+jest.config.js
+jsdoc.json
+
+# Build artifacts
+dist-examples/
+node_modules/
+coverage/
+
+# Development files
+.git/
+.github/
+*.log
+*.tsbuildinfo
+
+# Documentation source (keep generated docs)
+# docs/ is included via package.json files field
