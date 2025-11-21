@@ -1,8 +1,8 @@
 # routebus
 
-[![npm version](https://badge.fury.io/js/routebus.svg)](https://www.npmjs.com/package/routebus)
-[![CI](https://github.com/Cr0wn-Gh0ul/RouteBus/actions/workflows/ci.yml/badge.svg)](https://github.com/Cr0wn-Gh0ul/RouteBus/actions/workflows/ci.yml)
+![NPM Version](https://img.shields.io/npm/v/routebus)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![CI](https://github.com/Cr0wn-Gh0ul/RouteBus/actions/workflows/ci.yml/badge.svg)](https://github.com/Cr0wn-Gh0ul/RouteBus/actions/workflows/ci.yml)
 [![Tests](https://img.shields.io/badge/tests-21%20passing-brightgreen.svg)]()
 [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
