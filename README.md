@@ -1,5 +1,9 @@
 # routebus
 
+[![npm version](https://badge.fury.io/js/routebus.svg)](https://www.npmjs.com/package/routebus)
+[![CI](https://github.com/Cr0wn-Gh0ul/RouteBus/actions/workflows/ci.yml/badge.svg)](https://github.com/Cr0wn-Gh0ul/RouteBus/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **A type-safe event bus for TypeScript with pluggable transports.**
 
 Start with in-memory events, scale to cross-tab sync, or go distributed with Redis—without rewriting your code.
