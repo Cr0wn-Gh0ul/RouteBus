@@ -1,0 +1,19 @@
+{
+  "source": {
+    "include": ["src"],
+    "includePattern": ".+\\.ts$"
+  },
+  "opts": {
+    "destination": "./docs/html",
+    "recurse": true,
+    "readme": "README.md"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false
+  },
+  "metadata": {
+    "title": "routebus API Documentation"
+  }
+}

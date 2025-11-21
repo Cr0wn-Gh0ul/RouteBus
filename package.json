@@ -1,0 +1,52 @@
+{
+  "name": "routebus",
+  "version": "1.0.0",
+  "description": "Type-safe event bus with pluggable transports",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:tests": "tsc -p tsconfig.test.json",
+    "build:examples": "tsc -p tsconfig.examples.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "docs": "npm run build && jsdoc2md dist/index.js > docs/API.md",
+    "docs:html": "npm run build && jsdoc -c jsdoc.json dist/index.js",
+    "example": "npm run build && npm run build:examples && node dist-examples/examples/basic.js"
+  },
+  "keywords": [
+    "event-bus",
+    "event-emitter",
+    "typescript",
+    "type-safe",
+    "pubsub",
+    "redis",
+    "broadcast-channel",
+    "microservices"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^30.2.0",
+    "jsdoc": "^4.0.5",
+    "jsdoc-to-markdown": "^9.1.3",
+    "ts-jest": "^29.4.5",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "docs"
+  ]
+}

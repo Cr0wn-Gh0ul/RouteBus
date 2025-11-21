@@ -1,0 +1,8 @@
+node_modules/
+dist/
+dist-tests/
+dist-examples/
+coverage/
+docs/html/
+*.log
+.DS_Store
